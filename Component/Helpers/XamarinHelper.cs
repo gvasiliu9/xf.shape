@@ -11,12 +11,12 @@ namespace Component.Helpers
         /// <param name="command"></param>
         /// <param name="parameter"></param>
         /// <returns></returns>
-        public static bool CanExecuteCommand(ICommand command, object parameter = null)
+        public static void ExecuteCommand(ICommand command, object parameter = null)
         {
-            if (command == null)
-                return false;
+            if (command == null || !command.CanExecute(parameter))
+                return;
 
-            return command.CanExecute(parameter);
+            command.Execute(parameter);
         }
 
         /// <summary>

@@ -1,7 +1,4 @@
-﻿using System;
-using Component;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace Playground
 {
@@ -11,7 +8,7 @@ namespace Playground
         {
             InitializeComponent();
 
-            MainPage = new PlaygroundPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

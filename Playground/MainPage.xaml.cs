@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace Component
+namespace Playground
 {
-    public partial class PlaygroundPage : ContentPage
+    public partial class MainPage : ContentPage
     {
-        public PlaygroundPage()
+        public MainPage()
         {
             InitializeComponent();
         }

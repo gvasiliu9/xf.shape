@@ -17,6 +17,7 @@
     <Folder Include="Content\" />
     <Folder Include="Resources\Fonts\" />
     <Folder Include="Models\" />
+    <Folder Include="Demo\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Resources\Fonts\Roboto-Black.ttf" />

@@ -10,6 +10,6 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Component\Component.csproj" />
+    <ProjectReference Include="..\Component\Utmdev.Xf.Components.csproj" />
   </ItemGroup>
 </Project>

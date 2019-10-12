@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component", "Component\Component.csproj", "{97F60428-B5FD-4DBA-9D5A-4A8CE4AB501E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utmdev.Xf.Components", "Component\Utmdev.Xf.Components.csproj", "{97F60428-B5FD-4DBA-9D5A-4A8CE4AB501E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Android", "Playground.Android\Playground.Android.csproj", "{85FB82F2-5F72-4973-BDD4-047108383A85}"
 EndProject

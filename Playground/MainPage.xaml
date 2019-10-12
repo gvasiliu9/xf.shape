@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:utmdev.components="clr-namespace:Utmdev.Xf.Components;assembly=Utmdev.Xf.Switcher"
+             x:Class="Playground.MainPage">
+
+    <ContentPage.Content>
+
+        <utmdev.components:Switcher x:Name="switcher"
+                                    VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="CenterAndExpand"
+                                    IsOn="True"
+                                    HeightRequest="50"
+                                    WidthRequest="125"
+                                    CircleColor="White"
+                                    BackgroundColor="#0D96F2" />
+
+    </ContentPage.Content>
+
+</ContentPage>
