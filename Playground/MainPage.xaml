@@ -9,11 +9,11 @@
         <utmdev.components:Switcher x:Name="switcher"
                                     VerticalOptions="CenterAndExpand"
                                     HorizontalOptions="CenterAndExpand"
-                                    IsOn="True"
+                                    IsOn="False"
                                     HeightRequest="50"
                                     WidthRequest="125"
                                     CircleColor="White"
-                                    BackgroundColor="#0D96F2" />
+                                    BackgroundColor="#2FC061" />
 
     </ContentPage.Content>
 
