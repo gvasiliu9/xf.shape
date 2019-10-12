@@ -1,6 +1,6 @@
 **Xamarin Forms Switcher**
 
-<a href="https://www.nuget.org/packages/Utmdev.Xf.Components.Switcher/" target="_blank"><img src="https://www.nuget.org/packages/Utmdev.Xf.Components.Switch/1.0.0"/></a>
+<a href="https://www.nuget.org/packages/Utmdev.Xf.Components.Switcher/" target="_blank"><img src="https://www.nuget.org/packages/Utmdev.Xf.Components.Switch/"/></a>
 
 
 **Usage**
