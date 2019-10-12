@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Utmdev.Xf.Components.Switcher</id>
+    <version>1.0.0</version>
+    <title>Xamarin Forms Switcher</title>
+    <authors>Gheorghe Vasiliu</authors>
+    <owners>Gheorghe Vasiliu</owners>
+    <projectUrl>https://github.com/utmdev/xf.switcher</projectUrl>
+    <iconUrl>https://c2itconsulting.net/wp-content/uploads/2016/02/logo-xamarin.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Xamarin Forms Switcher UI Component</description>
+    <releaseNotes>
+        - Tap command
+        - Colors
+        - Animation
+    </releaseNotes>
+    <copyright>Copyright 2019</copyright>
+  </metadata>
+</package>
