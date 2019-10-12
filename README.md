@@ -1,2 +1,2 @@
-# xf.component
-Xamarin.Forms component template
+# xf.switcher
+Xamarin Forms Switcher Component
