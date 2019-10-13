@@ -1,6 +1,6 @@
 **Xamarin Forms Switch Component**
 
-<a href="https://www.nuget.org/packages/Utmdev.Xf.Switch/" target="_blank"><img src="https://img.shields.io/nuget/v/Utmdev.Xf.Switch"/></a>
+<a href="https://www.nuget.org/packages/Utmdev.Xf.Switch/" target="_blank"><img src="https://img.shields.io/nuget/v/Utmdev.Xf.Switch?style=for-the-badge"/></a>
 
 **Usage**
 
