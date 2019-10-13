@@ -1,4 +1,4 @@
-**Xamarin Forms Switcher**
+**Xamarin Forms Switch Component**
 
 <a href="https://www.nuget.org/packages/Utmdev.Xf.Switch/" target="_blank"><img src="https://img.shields.io/nuget/v/Utmdev.Xf.Switch"/></a>
 
@@ -6,11 +6,11 @@
 
 Namespace:
 
-    xmlns:utmdev.components="clr-namespace:Utmdev.Xf.Components;assembly=Utmdev.Xf.Switcher"
+    xmlns:utmdev="clr-namespace:Utmdev.Xf.Components;assembly=Utmdev.Xf.Switch"
 
 Component
 
-    <utmdev.components:Switcher x:Name="switcher"
+    <utmdev:Switch x:Name="switcher"
                                 VerticalOptions="CenterAndExpand"
                                 HorizontalOptions="CenterAndExpand"
                                 IsOn="False"
