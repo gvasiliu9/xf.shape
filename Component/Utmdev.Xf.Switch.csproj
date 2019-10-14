@@ -3,9 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-    <AssemblyName>Utmdev.Xf.Switcher</AssemblyName>
+    <AssemblyName>Utmdev.Xf.Switch</AssemblyName>
+    <ReleaseVersion>1.0.0</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="SkiaSharp" Version="1.68.0" />
@@ -18,6 +23,8 @@
     <Folder Include="Resources\Fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Demo\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\lib\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Resources\Fonts\Roboto-Black.ttf" />

@@ -8,8 +8,6 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Component\Utmdev.Xf.Components.csproj" />
+    <PackageReference Include="Utmdev.Xf.Switch" Version="1.0.4" />
   </ItemGroup>
 </Project>

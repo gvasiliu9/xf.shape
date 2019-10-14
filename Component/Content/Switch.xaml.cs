@@ -9,7 +9,7 @@ using Component.Helpers;
 
 namespace Utmdev.Xf.Components
 {
-    public partial class Switcher : ContentView
+    public partial class Switch : ContentView
     {
         #region Fields
 
@@ -21,8 +21,6 @@ namespace Utmdev.Xf.Components
         private SKPaint _backgroundCirclePaint;
 
         // Info
-        private bool _isEnabled = true;
-
         private SKRect _backgroundRoundedRect;
 
         private float _circleRadius;
@@ -45,7 +43,7 @@ namespace Utmdev.Xf.Components
         #region Bindable Properties
 
         public static readonly BindableProperty CircleColorProperty = BindableProperty
-            .Create(nameof(CircleColor), typeof(Color), typeof(Switcher), default(Color));
+            .Create(nameof(CircleColor), typeof(Color), typeof(Switch), default(Color));
 
         public Color CircleColor
         {
@@ -54,7 +52,7 @@ namespace Utmdev.Xf.Components
         }
 
         public new static readonly BindableProperty BackgroundColorProperty = BindableProperty
-            .Create(nameof(BackgroundColor), typeof(Color), typeof(Switcher), Color.FromHsla(0.36, 0.5, 0.5));
+            .Create(nameof(BackgroundColor), typeof(Color), typeof(Switch), Color.FromHsla(0.36, 0.5, 0.5));
 
         public new Color BackgroundColor
         {
@@ -63,7 +61,7 @@ namespace Utmdev.Xf.Components
         }
 
         public static readonly BindableProperty IsOnProperty = BindableProperty
-            .Create(nameof(IsOn), typeof(bool?), typeof(Switcher));
+            .Create(nameof(IsOn), typeof(bool?), typeof(Switch));
 
         public bool IsOn
         {
@@ -76,7 +74,7 @@ namespace Utmdev.Xf.Components
         #region Commands
 
         public static readonly BindableProperty TapCommandProperty = BindableProperty
-            .Create(nameof(TapCommand), typeof(ICommand), typeof(Switcher));
+            .Create(nameof(TapCommand), typeof(ICommand), typeof(Switch));
 
         public ICommand TapCommand
         {
@@ -86,7 +84,7 @@ namespace Utmdev.Xf.Components
 
         #endregion
 
-        public Switcher()
+        public Switch()
         {
             InitializeComponent();
 
