@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="Utmdev.Xf.Shape.Content.Shape">
+
+    <ContentView.Content>
+
+        <!--Container-->
+        <Grid x:Name="container"
+              VerticalOptions="Start">
+
+            <!--Shape-->
+            <skia:SKCanvasView x:Name="canvas"
+                               AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                               AbsoluteLayout.LayoutFlags="All"
+                               PaintSurface="Canvas_PaintSurface" />
+
+            <!--Section-->
+            <StackLayout x:Name="section"
+                         Spacing="0"
+                         AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                         AbsoluteLayout.LayoutFlags="All" />
+
+        </Grid>
+
+    </ContentView.Content>
+
+</ContentView>

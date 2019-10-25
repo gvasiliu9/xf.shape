@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-    <AssemblyName>Utmdev.Xf.Switch</AssemblyName>
+    <AssemblyName>Utmdev.Xf.Shape</AssemblyName>
     <ReleaseVersion>1.0.0</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
   </PropertyGroup>
@@ -25,6 +25,7 @@
     <Folder Include="Demo\" />
     <Folder Include="lib\" />
     <Folder Include="lib\lib\" />
+    <Folder Include="MarkupExtensions\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Resources\Fonts\Roboto-Black.ttf" />

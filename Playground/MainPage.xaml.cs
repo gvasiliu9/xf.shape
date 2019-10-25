@@ -10,11 +10,6 @@ namespace Playground
         public MainPage()
         {
             InitializeComponent();
-
-            xfSwitch.TapCommand = new Command<bool>(async (isOn) =>
-            {
-                Debug.WriteLine(isOn);
-            });
         }
     }
 }

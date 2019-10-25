@@ -2,18 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
     <metadata>
 
-        <id>Utmdev.Xf.Component</id>
+        <id>Utmdev.Xf.Shape</id>
         <version>1.0.0</version>
         <authors>Gheorghe Vasiliu</authors>
         <owners>Gheorghe Vasiliu</owners>
-        <projectUrl>https://github.com/utmdev/xf.component</projectUrl>
+        <projectUrl>https://github.com/utmdev/xf.shape</projectUrl>
         <iconUrl>https://c2itconsulting.net/wp-content/uploads/2016/02/logo-xamarin.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <releaseNotes>
-            Features:
-            - F1
-            - F2
-            - Fn
         </releaseNotes>
         <description>UI Component</description>
         <copyright>Copyright © 2019 Utmdev</copyright>

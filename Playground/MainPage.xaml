@@ -1,19 +1,63 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:utmdev="clr-namespace:Utmdev.Xf.Components;assembly=Utmdev.Xf.Switch"
+             xmlns:utmdev="clr-namespace:Utmdev.Xf.Shape.Content;assembly=Utmdev.Xf.Shape"
+             xmlns:markupExtensions="clr-namespace:Utmdev.Xf.Shape.MarkupExtensions;assembly=Utmdev.Xf.Shape"
+             BackgroundColor="#F2F2F6"
              x:Class="Playground.MainPage">
 
     <ContentPage.Content>
 
-        <utmdev:Switch x:Name="xfSwitch"
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalOptions="CenterAndExpand"
-                       IsOn="False"
-                       HeightRequest="50"
-                       WidthRequest="125"
-                       CircleColor="White"
-                       BackgroundColor="#2FC061" />
+        <StackLayout Margin="25, 75"
+                     Spacing="0">
+
+            <!--Header-->
+            <utmdev:Shape Parameters="{markupExtensions:ShapeParameters TopLeft=30, TopRight=30, BottomRight=0, BottomLeft=0}"
+                          Gradient="{markupExtensions:ShapeGradient Start=Black, End=Red, Degrees=90, EndPosition=0.5,StartPosition=0.5}"
+                          BackgroundColor="#5A38B1">
+
+                <utmdev:Shape.Section>
+
+                    <!--Section-->
+                    <StackLayout VerticalOptions="StartAndExpand">
+
+                        <Label Text="You  have 100 points to give away"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold"
+                               Margin="15"
+                               LineBreakMode="WordWrap"
+                               TextColor="White" />
+
+                    </StackLayout>
+
+                </utmdev:Shape.Section>
+
+            </utmdev:Shape>
+
+            <!--Body-->
+            <utmdev:Shape Parameters="{markupExtensions:ShapeParameters TopLeft=0, TopRight=0, BottomRight=30, BottomLeft=30}"
+                          BackgroundColor="White"
+                          Type="Rounded">
+
+                <utmdev:Shape.Section>
+
+                    <!--Section-->
+                    <StackLayout Padding="20">
+
+                        <Label Text="Body"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center" />
+
+                    </StackLayout>
+
+                </utmdev:Shape.Section>
+
+            </utmdev:Shape>
+
+        </StackLayout>
 
     </ContentPage.Content>
 
