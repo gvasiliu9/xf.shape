@@ -1,3 +1,74 @@
+## **Xamarin Forms Shape Component**
+You can use this component in case you want to create a component with a specific rounded corner. By default Xamarin.Forms offers Frame component which can have rounded corners but you can't customize specific corner. Also Shape component supports linear gradient. 
 
-**Xamarin Forms Component Template**
-__________________________________________________________________________________
+**Usage:**
+
+Namespaces:
+
+    xmlns:utmdev="clr-namespace:Utmdev.Xf.Shape.Content;assembly=Utmdev.Xf.Shape"
+    xmlns:shapeMarkupExtensions="clr-namespace:Utmdev.Xf.Shape.MarkupExtensions;assembly=Utmdev.Xf.Shape"
+
+Component:
+
+    <utmdev:Shape BackgroundColor="#56A3A6"
+	              Parameters="{shapeMarkupExtensions:ShapeParameters TopLeft=50,  TopRight=50, BottomRight=50, BottomLeft=50}"
+                  Padding="25">
+
+	    <utmdev:Shape.Section>
+
+	        <Label Text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+	                FontAttributes="Bold"
+	                TextColor="White"
+	                VerticalOptions="CenterAndExpand"
+	                HorizontalTextAlignment="Center" />
+
+	    </utmdev:Shape.Section>
+	    
+    </utmdev:Shape>
+
+**Specific corner:**
+
+    <utmdev:Shape BackgroundColor="#F9C80E"
+                Parameters="{shapeMarkupExtensions:ShapeParameters TopLeft=50}"
+                Padding="25">
+                
+	    <utmdev:Shape.Section>
+		    ...
+	    </utmdev:Shape.Section>
+	    
+    </utmdev:Shape>
+
+
+<p align="center">
+  <img width="500" src="https://github.com/utmdev/xf.shape/blob/master/Component/Demo/top_left.png" />
+</p>
+
+**Gradient:**
+
+    <utmdev:Shape Gradient="{shapeMarkupExtensions:ShapeGradient Start=#659999, End=#f4791f, Degrees=0, EndPosition=1}"
+                  Parameters="{shapeMarkupExtensions:ShapeParameters TopLeft=50}"
+                  Padding="25">
+
+	    <utmdev:Shape.Section>
+			...
+	    </utmdev:Shape.Section>
+	    
+    </utmdev:Shape>
+
+<p align="center">
+  <img width="500" src="https://github.com/utmdev/xf.shape/blob/master/Component/Demo/gradient.png" />
+</p>
+
+Gradient markup extension supports next values:
+ - Start - color
+ - End - color
+ - Degrees - rotate gradient, values from 0-360
+ -  Start position (adjust start color position, value from [0-1])
+ -  End position (adjust end color position, value from [0-1])
+ 
+ (adjust these values to customize your gradient color).
+
+**Usage example:**
+<p align="center">
+  <img width="550" src="https://github.com/utmdev/xf.shape/blob/master/Component/Demo/points.png" />
+</p>
