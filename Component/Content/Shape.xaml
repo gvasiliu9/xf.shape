@@ -8,6 +8,7 @@
 
         <!--Container-->
         <Grid x:Name="container"
+              IsClippedToBounds="False"
               VerticalOptions="Start">
 
             <!--Shape-->

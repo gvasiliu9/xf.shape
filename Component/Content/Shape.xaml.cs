@@ -26,7 +26,7 @@ namespace Utmdev.Xf.Shape.Content
             .Create(nameof(Parameters),
             typeof(ShapeParameters),
             typeof(Shape),
-            default(ShapeParameters));
+            new ShapeParameters(5, 5, 5, 5));
 
         public ShapeParameters Parameters
         {
@@ -165,10 +165,6 @@ namespace Utmdev.Xf.Shape.Content
 
         private void DrawShape()
         {
-            // Check parameters
-            if (Parameters == null)
-                return;
-
             // Check shape type
             switch (Type)
             {
@@ -200,14 +196,11 @@ namespace Utmdev.Xf.Shape.Content
                 path.QuadTo(new SKPoint(0, _canvasInfo.ImageInfo.Height),
                     new SKPoint(0, _canvasInfo.ImageInfo.Height - Parameters.BottomLeft));
 
-                // Background color
-                _shapePaint.Color = SKColor.Parse(BackgroundColor.ToHex());
-
-                // Shadow
-
-                // Gradient
+                // Gradient & Background color
                 if (Gradient != null)
                     AddGradinet();
+                else
+                    _shapePaint.Color = SKColor.Parse(BackgroundColor.ToHex());
 
                 // Draw
                 _canvasInfo.Canvas.DrawPath(path, _shapePaint);
@@ -232,7 +225,15 @@ namespace Utmdev.Xf.Shape.Content
 
         private void AddGradinet()
         {
-
+            _shapePaint.Shader = SKShader.CreateLinearGradient(
+                    new SKPoint(0, 0),
+                    new SKPoint(_canvasInfo.ImageInfo.Width, _canvasInfo.ImageInfo.Height),
+                    new SKColor[] { SKColor.Parse(Gradient.Start.ToHex()), SKColor.Parse(Gradient.End.ToHex()) },
+                    new float[] { Gradient.StartPosition, Gradient.EndPosition },
+                    SKShaderTileMode.Clamp,
+                    SKMatrix.MakeRotation(Gradient.Degrees,
+                        _canvasInfo.ImageInfo.Rect.MidX,
+                        _canvasInfo.ImageInfo.Rect.MidY));
         }
 
         #endregion

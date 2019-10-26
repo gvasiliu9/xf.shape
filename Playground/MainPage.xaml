@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:utmdev="clr-namespace:Utmdev.Xf.Shape.Content;assembly=Utmdev.Xf.Shape"
-             xmlns:markupExtensions="clr-namespace:Utmdev.Xf.Shape.MarkupExtensions;assembly=Utmdev.Xf.Shape"
+             xmlns:shapeMarkupExtensions="clr-namespace:Utmdev.Xf.Shape.MarkupExtensions;assembly=Utmdev.Xf.Shape"
              BackgroundColor="#F2F2F6"
              x:Class="Playground.MainPage">
 
@@ -12,46 +12,33 @@
                      Spacing="0">
 
             <!--Header-->
-            <utmdev:Shape Parameters="{markupExtensions:ShapeParameters TopLeft=30, TopRight=30, BottomRight=0, BottomLeft=0}"
-                          Gradient="{markupExtensions:ShapeGradient Start=Black, End=Red, Degrees=90, EndPosition=0.5,StartPosition=0.5}"
-                          BackgroundColor="#5A38B1">
+            <utmdev:Shape BackgroundColor="#56A3A6"
+                          Parameters="{shapeMarkupExtensions:ShapeParameters TopLeft=50, TopRight=50}"
+                          Padding="25">
 
                 <utmdev:Shape.Section>
 
-                    <!--Section-->
-                    <StackLayout VerticalOptions="StartAndExpand">
-
-                        <Label Text="You  have 100 points to give away"
-                               HorizontalTextAlignment="Center"
-                               FontAttributes="Bold"
-                               Margin="15"
-                               LineBreakMode="WordWrap"
-                               TextColor="White" />
-
-                    </StackLayout>
+                    <Label Text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center" />
 
                 </utmdev:Shape.Section>
 
             </utmdev:Shape>
 
-            <!--Body-->
-            <utmdev:Shape Parameters="{markupExtensions:ShapeParameters TopLeft=0, TopRight=0, BottomRight=30, BottomLeft=30}"
-                          BackgroundColor="White"
-                          Type="Rounded">
+            <!--Section-->
+            <utmdev:Shape Padding="25"
+                          BackgroundColor="White">
 
                 <utmdev:Shape.Section>
 
-                    <!--Section-->
-                    <StackLayout Padding="20">
-
-                        <Label Text="Body"
-                               VerticalOptions="CenterAndExpand"
-                               FontAttributes="Bold"
-                               TextColor="Black"
-                               HorizontalTextAlignment="Center"
-                               VerticalTextAlignment="Center" />
-
-                    </StackLayout>
+                    <Label Text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center" />
 
                 </utmdev:Shape.Section>
 
