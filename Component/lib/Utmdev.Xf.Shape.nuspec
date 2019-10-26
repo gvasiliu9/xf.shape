@@ -10,10 +10,11 @@
         <iconUrl>https://c2itconsulting.net/wp-content/uploads/2016/02/logo-xamarin.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <releaseNotes>
+            Features:
             - Gradient
-            - 
+            - Parameters
         </releaseNotes>
-        <description>UI Component</description>
+        <description>UI Component which can be used as a container with rounded corners.</description>
         <copyright>Copyright © 2019 Utmdev</copyright>
         <tags>ui xamarin.forms</tags>
 
