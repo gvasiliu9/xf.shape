@@ -1,5 +1,8 @@
-## **Xamarin Forms Shape Component**
+
+## **Shape Component for Xamarin Forms**
 You can use this component in case you want to create a component with a specific rounded corner. By default Xamarin.Forms offers Frame component which can have rounded corners but you can't customize specific corner. Also Shape component supports linear gradient. 
+
+![Nuget](https://img.shields.io/nuget/v/Utmdev.Xf.Shape?style=for-the-badge)
 
 **Usage:**
 
@@ -38,6 +41,12 @@ Component:
 	    
     </utmdev:Shape>
 
+
+Shape parameters supports next values:
+ - TopLeft - top left corner
+ - TopRight - top right corner
+ - BottomRight - bottom right corner
+ - BottomLeft - bottom left corner 
 
 <p align="center">
   <img width="500" src="https://github.com/utmdev/xf.shape/blob/master/Component/Demo/top_left.png" />
