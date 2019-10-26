@@ -10,6 +10,8 @@
         <iconUrl>https://c2itconsulting.net/wp-content/uploads/2016/02/logo-xamarin.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <releaseNotes>
+            - Gradient
+            - 
         </releaseNotes>
         <description>UI Component</description>
         <copyright>Copyright © 2019 Utmdev</copyright>

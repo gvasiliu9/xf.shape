@@ -15,7 +15,7 @@ namespace Utmdev.Xf.Shape.MarkupExtensions
 
         public float StartPosition { get; set; }
 
-        public float EndPosition { get; set; }
+        public float EndPosition { get; set; } = 1;
 
         public ShapeGradient ProvideValue(IServiceProvider serviceProvider)
         {

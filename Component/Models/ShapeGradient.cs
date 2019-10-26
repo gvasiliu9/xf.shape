@@ -13,6 +13,6 @@ namespace Utmdev.Xf.Shape.Models
 
         public float StartPosition { get; set; }
 
-        public float EndPosition { get; set; }
+        public float EndPosition { get; set; } = 1;
     }
 }

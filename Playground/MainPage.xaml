@@ -8,43 +8,22 @@
 
     <ContentPage.Content>
 
-        <StackLayout Margin="25, 75"
-                     Spacing="0">
+        <utmdev:Shape Gradient="{shapeMarkupExtensions:ShapeGradient Start=#659999, End=#f4791f, Degrees=90}"
+                      Parameters="{shapeMarkupExtensions:ShapeParameters TopLeft=50}"
+                      Margin="25, 75"
+                      Padding="25">
 
-            <!--Header-->
-            <utmdev:Shape BackgroundColor="#56A3A6"
-                          Parameters="{shapeMarkupExtensions:ShapeParameters TopLeft=50, TopRight=50}"
-                          Padding="25">
+            <utmdev:Shape.Section>
 
-                <utmdev:Shape.Section>
+                <Label Text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Center" />
 
-                    <Label Text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
-                           FontAttributes="Bold"
-                           TextColor="White"
-                           VerticalOptions="CenterAndExpand"
-                           HorizontalTextAlignment="Center" />
+            </utmdev:Shape.Section>
 
-                </utmdev:Shape.Section>
-
-            </utmdev:Shape>
-
-            <!--Section-->
-            <utmdev:Shape Padding="25"
-                          BackgroundColor="White">
-
-                <utmdev:Shape.Section>
-
-                    <Label Text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
-                           FontAttributes="Bold"
-                           TextColor="Black"
-                           VerticalOptions="CenterAndExpand"
-                           HorizontalTextAlignment="Center" />
-
-                </utmdev:Shape.Section>
-
-            </utmdev:Shape>
-
-        </StackLayout>
+        </utmdev:Shape>
 
     </ContentPage.Content>
 
